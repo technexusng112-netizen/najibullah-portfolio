@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Najibu Aliyu | Data Analyst</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+transition:0.3s;
+}
+
+body.dark{
+background:#020617;
+color:white;
+}
+
+#particles{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#0f172a;
+color:white;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+.toggle{
+background:#2563eb;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+/* hero */
+
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+padding:60px 10%;
+}
+
+.hero img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #2563eb;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.hero-text span{
+color:#2563eb;
+}
+
+.hero-text p{
+margin:15px 0;
+max-width:500px;
+}
+
+.btn{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+margin-top:10px;
+}
+
+/* sections */
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-size:30px;
+text-align:center;
+margin-bottom:40px;
+}
+
+/* cards */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+body.dark .card{
+background:rgba(255,255,255,0.05);
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* skills */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.skill i{
+font-size:40px;
+color:#2563eb;
+margin-bottom:8px;
+}
+
+/* contact */
+
+.contact{
+text-align:center;
+}
+
+.socials a{
+margin:10px;
+font-size:22px;
+color:#2563eb;
+}
+
+/* whatsapp floating */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:12px 16px;
+border-radius:50%;
+font-size:22px;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+background:#0f172a;
+color:white;
+padding:20px;
+}
+
+.project-icon{
+font-size:40px;
+color:#2563eb;
+margin-bottom:15px;
+display:block;
+}
+
+.service-icon{
+font-size:40px;
+color:#2563eb;
+margin-bottom:15px;
+display:block;.contact-info{
+margin-top:20px;
+font-size:18px;
+}
+
+.contact-info i{
+color:#2563eb;
+margin-right:8px;
+}
+
+.contact-info a{
+text-decoration:none;
+color:inherit;
+}
+}
+
+
+
+#theme-toggle{
+background:none;
+border:none;
+font-size:22px;
+cursor:pointer;
+color:#2563eb;
+transition:0.4s;
+}
+
+#theme-toggle:hover{
+transform:rotate(180deg) scale(1.2);
+color:#0ea5e9;
+text-shadow:0 0 10px #2563eb;
+}
+
+
+body.dark{
+background:#020617;
+color:white;
+}
+
+body.dark header{
+background:#020617;
+}
+
+body.dark .card{
+background:#0f172a;
+color:white;
+}
+
+body.dark footer{
+background:#020617;
+}
+
+body.dark a{
+color:#38bdf8;
+}
+
+
+
+body{
+background:#f4f6f9;
+color:#333;
+}
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+<div id="particles"></div>
+
+<header>
+
+<h2>Najibu Aliyu</h2>
+
+<nav>
+
+<a href="#home">H
+ome</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+
+</nav>
+<button id="theme-toggle">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</header>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<img src="Najibu.jpg">
+
+<div class="hero-text">
+
+<h1>Hello I'm <span>Najibu Aliyu</span></h1>
+
+<p>
+Tech & Digital Solutions Provider and Data Analyst helping businesses,
+NGOs, schools and organizations with data analysis, digital tools and web solutions.
+</p>
+
+<a class="btn" href="#projects">View My Work</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto">
+
+I am a Tech & Digital Solutions Provider and Data Analyst from
+Zamfara, Nigeria.
+
+I help organizations transform raw data into insights and build
+digital systems for efficient operations using Excel, Power BI,
+SPSS, SQL, and web technologies.
+
+</p>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="section-title">Services</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fa-solid fa-file-lines service-icon"></i>
+
+<h3>Document Services</h3>
+
+<p>
+Professional CV creation, document formatting, Excel templates,
+reports, and business presentations.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line service-icon"></i>
+
+<h3>Data Analysis</h3>
+
+<p>
+Data cleaning, statistical analysis, dashboards,
+and business insights using Excel, Power BI, and SPSS.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<i class="fa-solid fa-database service-icon"></i>
+
+<h3>Digital Data Collection</h3>
+
+<p>
+Survey systems and digital data collection tools
+using ODK, CommCare, and Google Forms.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<i class="fa-solid fa-globe service-icon"></i>
+
+<h3>Website Development</h3>
+
+<p>
+Modern responsive websites for businesses,
+schools, organizations, and personal portfolios.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card project">
+
+<i class="fa-solid fa-money-bill-trend-up project-icon"></i>
+
+<h3>Loan Repayment Tracker</h3>
+
+<p>
+Excel system designed to track loan payments, balances, due dates,
+and repayment schedules for better financial management.
+</p>
+
+</div>
+
+
+<div class="card project">
+
+<i class="fa-solid fa-hospital project-icon"></i>
+
+<h3>Hospital Records Tracker</h3>
+
+<p>
+Excel-based hospital record system used to manage patient data,
+treatments, and hospital reporting efficiently.
+</p>
+
+</div>
+
+
+<div class="card project">
+
+<i class="fa-solid fa-user-check project-icon"></i>
+
+<h3>Attendance Tracker (School/Office)</h3>
+
+<p>
+Automated Excel attendance monitoring system for schools
+and organizations with summary reports.
+</p>
+
+</div>
+
+
+<div class="card project">
+
+<i class="fa-solid fa-user-clock project-icon"></i>
+
+<h3>Employees Retirement Tracker</h3>
+
+<p>
+Excel template designed to monitor staff retirement dates
+and support workforce planning.
+</p>
+
+</div>
+
+
+<div class="card project">
+
+<i class="fa-solid fa-table project-icon"></i>
+
+<h3>Data Entry & Record Template</h3>
+
+<p>
+Structured Excel template used for accurate data entry,
+record keeping, and reporting.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="section-title">Tools & Technologies</h2>
+
+<div class="skills">
+
+<div class="skill"><i class="fa-solid fa-file-word"></i><p>Word</p></div>
+<div class="skill"><i class="fa-solid fa-file-powerpoint"></i><p>PowerPoint</p></div>
+<div class="skill"><i class="fa-solid fa-file-excel"></i><p>Excel</p></div>
+<div class="skill"><i class="fa-solid fa-chart-column"></i><p>Power BI</p></div>
+<div class="skill"><i class="fa-solid fa-database"></i><p>SQL</p></div>
+<div class="skill"><i class="fa-solid fa-chart-line"></i><p>SPSS</p></div>
+<div class="skill"><i class="fa-solid fa-earth-africa"></i><p>QGIS</p></div>
+<div class="skill"><i class="fa-solid fa-mobile"></i><p>ODK</p></div>
+<div class="skill"><i class="fa-solid fa-cloud"></i><p>CommCare</p></div>
+<div class="skill"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+<div class="skill"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+<div class="skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+
+
+
+<div class="socials">
+
+<a href="https://linkedin.com/in/najibu-aliyu-58902a393/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+<a href="https://facebook.com/profile.php?id=100089691913270" target="_blank"><i class="fab fa-facebook"></i></a>
+
+<a href="https://twitter.com/AliyuNajib3964" target="_blank"><i class="fab fa-twitter"></i></a>
+
+<a href="https://wa.me/2348028151367" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="mailto:najibualiyu112@gmail.com?subject=Contact%20from%20Portfolio">
+<i class="fa-solid fa-envelope"></i>
+</a><br>
+    <br>
+
+<div class="contact-info">
+
+<div class="contact-info">
+
+<p>
+<i class="fa-solid fa-phone"></i> 
++234 802 815 1367
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i> 
+Zamfara, Nigeria
+</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Najibu Aliyu | Tech & Digital Solutions Provider</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/2348028151367" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+
+function toggleMode(){
+document.body.classList.toggle("dark");
+}
+
+/* particles background */
+
+tsParticles.load("particles",{
+particles:{
+number:{value:70},
+size:{value:3},
+move:{speed:1},
+color:{value:"#2563eb"}
+}
+});
+
+</script>
+
+
+
+
+
+<script>
+
+const toggle = document.getElementById("theme-toggle");
+const icon = toggle.querySelector("i");
+
+if(localStorage.getItem("theme") === "dark"){
+document.body.classList.add("dark");
+icon.classList.remove("fa-moon");
+icon.classList.add("fa-sun");
+}
+
+toggle.onclick = function(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+icon.classList.remove("fa-moon");
+icon.classList.add("fa-sun");
+localStorage.setItem("theme","dark");
+}else{
+icon.classList.remove("fa-sun");
+icon.classList.add("fa-moon");
+localStorage.setItem("theme","light");
+}
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
